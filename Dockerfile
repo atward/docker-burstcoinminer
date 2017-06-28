@@ -1,6 +1,6 @@
-FROM ubuntu:16.04
-COPY setup.sh /setup.sh
-RUN /setup.sh
+FROM ubuntu:17.04
+COPY setup.sh /tmp/setup.sh
+RUN /tmp/setup.sh
 COPY run.sh /creepMiner/run.sh
 ENV SET_TIMEZONE false
 ENV TIMEZONE Etc/UTC

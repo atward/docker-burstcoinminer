@@ -1,6 +1,6 @@
 ## docker-burstcoinminer
 
-A docker image for mining [Burstcoin](https://www.burst-team.us/) based on [Ubuntu 16.04](https://hub.docker.com/_/ubuntu/) and [creepMiner](https://github.com/Creepsky/creepMiner). The miner binary was built from [this commit](https://github.com/Creepsky/creepMiner/tree/f318a63749ab6cfcf2629ade255b4bdca486a39d).
+A docker image for mining [Burstcoin](https://www.burst-team.us/) based on [Ubuntu 17.04](https://hub.docker.com/_/ubuntu/) and [creepMiner](https://github.com/Creepsky/creepMiner).
 
 ## How to use
 The image's entrypoint expects to find ```/conf/mining.conf``` and uses that as the configuration file for the miner. A sample configuration file is provided, but you'll have to change the following:
