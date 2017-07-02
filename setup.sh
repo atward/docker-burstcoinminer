@@ -18,7 +18,7 @@ apt-get install -y \
 cd /tmp
 git clone https://github.com/Creepsky/creepMiner.git creepMiner-src
 cd creepMiner-src
-git checkout 2.5.2
+git checkout 2.6.0
 
 # Still missing Poco::JSON
 wget $(grep -o 'http.*pocoproject.*$' install-poco.sh)
@@ -37,6 +37,7 @@ make
 mkdir /creepMiner
 mv bin/creepMiner bin/public /creepMiner/
 
+rm -rf /tmp/creepMiner-src
 export SUDO_FORCE_REMOVE=yes
 apt-get remove -y build-essential git sudo wget
 apt autoremove -y
